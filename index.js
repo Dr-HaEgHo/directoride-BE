@@ -4,12 +4,13 @@ const heroSliderImages = require('./dataset/heroSliderImages');
 const notifications = require('./dataset/notifications');
 const pricelist = require('./dataset/pricelist');
 const faqs = require('./dataset/faqs');
-// const cors = require('cors')
+const cors = require('cors')
 
 const server = express();
-// server.use(cors({
-//     origin: "*"
-// }));
+server.use(cors({
+    origin: '*',
+    methods: ['GET']
+}));
 
 const HOST = 'localhost'
 const PORT = process.env.PORT || 8888;
