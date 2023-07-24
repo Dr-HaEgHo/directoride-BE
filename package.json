@@ -4,13 +4,18 @@
   "description": "backend for directoride app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify deploy --prod"
   },
   "author": "Timothy Awogbuyi",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "knex": "^2.4.2",
+    "netlify-cli": "^15.9.1",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0",
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
